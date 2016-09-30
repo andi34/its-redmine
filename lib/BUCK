@@ -1,0 +1,17 @@
+include_defs('//lib/maven.defs')
+
+maven_jar(
+  name = 'redmine-java-api',
+  id = 'com.taskadapter:redmine-java-api:1.21',
+  license = 'Apache2.0'
+)
+maven_jar(
+  name = 'logback-classic',
+  id = 'ch.qos.logback:logback-classic:1.1.2',
+  license = 'Apache2.0'
+)
+maven_jar(
+  name = 'easymock',
+  id = 'org.easymock:easymock:3.2',
+  license = 'Apache2.0'
+)

@@ -28,8 +28,8 @@ import org.slf4j.LoggerFactory;
 import com.google.gerrit.extensions.annotations.PluginName;
 import com.google.gerrit.server.config.GerritServerConfig;
 import com.google.inject.Inject;
-import com.googlesource.gerrit.plugins.hooks.its.InvalidTransitionException;
-import com.googlesource.gerrit.plugins.hooks.its.ItsFacade;
+import com.googlesource.gerrit.plugins.its.base.its.InvalidTransitionException;
+import com.googlesource.gerrit.plugins.its.base.its.ItsFacade;
 import com.taskadapter.redmineapi.NotFoundException;
 import com.taskadapter.redmineapi.RedmineException;
 import com.taskadapter.redmineapi.RedmineManager;
@@ -231,14 +231,6 @@ public class RedmineItsFacade implements ItsFacade {
         return result;
       }
     });
-  }
-
-  /**
-   * @see com.googlesource.gerrit.plugins.hooks.its.ItsFacade#name()
-   */
-  @Override
-  public String name() {
-    return "Redmine";
   }
 
   /**
